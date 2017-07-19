@@ -1,0 +1,38 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-image: url("./pictures/drone.png");
+  background-position: center center;
+  background-attachment: fixed;
+  background-size:  cover;
+  height: 100%;
+  margin: 0;
+  font-family: 'Julius Sans One', sans-serif;
+}
+
+nav {
+  opacity: .7;
+}
+
+.vertigo {
+  font-family: 'Megrim', cursive;
+}
+
+#drone-logo {
+  height: 10%;
+  width: 10%;
+  margin-top: 10px;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+.main-page > h1 {
+  text-align: center;
+}
+
+.page-footer {
+    opacity: .7;
+}
