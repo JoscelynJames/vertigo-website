@@ -1,5 +1,6 @@
 body {
   font-family: 'Julius Sans One', sans-serif;
+  background-color: #EBEBEB;
 }
 
 .vertigo {
@@ -7,13 +8,15 @@ body {
 }
 
 #drone-logo {
+  margin-top: 6px;
   height: 10%;
   width: 10%;
 }
 #main-page {
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-around;
+  position: relative;
+  padding: 0;
 }
 
 #main-page img {
@@ -21,22 +24,13 @@ body {
   width: 45%;
   margin-top: 20px;
   box-shadow: 4px 3px 3px #bdbdbd;
-  border-radius: 200px;
+  border-radius: 300px;
   opacity: 1;
-  transition: .5s ease;
-  backface-visibility: hidden;
 }
 
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
+.text {
+  font-size: 1.5em;
 }
-
 
 #brandon:hover {
   opacity: .2;
@@ -46,13 +40,6 @@ body {
   opacity: .2;
 }
 
-.text {
-  background-color: #4CAF50;
-  color: white;
-  font-size: 16px;
-  padding: 16px 32px;
-}
-
 #about-us > h1 {
   text-align: center;
   font-size: 3em;
@@ -60,9 +47,27 @@ body {
 
 #about-us > p {
   margin: 5%;
-  font-size: 1.5em
+  font-size: 1.5em;
+  text-align: center;
 }
 
 .carousel img {
   height: 100%;
+}
+
+.names {
+  display: flex;
+  justify-content: space-around;
+}
+
+.name1 {
+  padding-top: 10px;
+  padding-right: 42%;
+  display: none;
+}
+
+.name2 {
+  padding-top: 10px;
+  padding-left: 42%;
+  display: none;
 }

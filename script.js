@@ -1,24 +1,17 @@
-$( document ).ready(function(){
-
+$(document).ready(function(){
   $(".button-collapse").sideNav();//mobile screen menu init
-
   $('.carousel').carousel(); //carousel init
-
   $('.carousel-slider').slider({full_width: true});//slider init
 
-  var myIndex = 0;
-  carousel();
+  $("#brandon").hover(function(){
+    $('.name1').show();
+  }, function() {
+    $('.name1').hide();
+  });
 
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-        if (myIndex > x.length) {myIndex = 1}
-          x[myIndex-1].style.display = "block";
-          setTimeout(carousel, 4000); // Change image every 2 seconds
-}
+  $("#joscelyn").hover(function(){
+    $('.name2').show();
+  }, function() {
+    $('.name2').hide();
+  });
 });

@@ -2,6 +2,7 @@ html, body {
   font-family: 'Julius Sans One', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #EBEBEB;
 }
 
 .brand-logo {
@@ -22,12 +23,35 @@ html, body {
 #main-page {
   margin-left: auto;
   margin-right: auto;
-  /*width: 100%;*/
   display: flex;
   justify-content: center;
 }
 
 .mySlides {
   /*display: none;*/
-  height: 500px;
+  height: 30vw;
+  width: 60vw;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.words {
+  text-align: center;
+  font-size: 1.3em
+}
+
+#quote {
+  width: 300px;
+  box-shadow: 0 4px 8px 4px rgba(0,0,0,0.2);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 40px
+}
+
+#quote p {
+  padding-top: 10px
+}
+
+#quote a {
+  margin-bottom: 10px
 }
